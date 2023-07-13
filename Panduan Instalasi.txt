@@ -1,0 +1,25 @@
+PANDUAN INSTALASI WEBSITE FOODIEST
+
+==Install Composser==
+1. Download composer pada link https://getcomposer.org/Composer-Setup.exe
+2. Setelah itu open file composer.exe lalu install
+3. Selanjutnya buka command prompt dan ketik composer -v untuk mengecek apakah composer sudah terinstal atau belum
+4. Jika sudah terinstal, cmd akan menampilkan versi dan informasi dari composernya
+
+==Install PHP Driver MongoDB==
+1. Buka link https://pecl.php.net/package/mongodb/1.9.1/windows
+2. Download PHP Driver Thread Safe (TS) sesuai dengan versi PHP yang terinstal pada laptop/PC 
+3. Selanjutnya extract file yang sudah di download sebelumnya, lalu copy file php_mongodb.dll dan paste ke folder xampp->php->ext
+4. Buka folder xampp->php->php.ini pada vscode/code editor dan tambahkan extension=php_mongodb.dll
+5. Untuk mengecek apakah php driver mongodb sudah teristal buka browser dan ketikan localhost->PHPInfo->search mongodb
+
+==Panduan Penggunaan Website Foodiest==
+1. Donwload code project (Foodiest) lalu pindahkan folder code ke xampp->htdocs
+2. Buka aplikasi MongoDB Compass lalu klik connect
+2. Setelah itu buat database baru dengan nama dbFoodiest
+3. Buat collection baru dengan nama user, order dan restoran
+4. Selanjutnya add data pada setiap collection dengan mengimport file json dari collection user, order dan restoran yang ada di folder database Foodiest
+5. Buka XAMPP lalu start module apache
+6. Buka web browser lalu ketikan localhost/Foodiest, tampilan akan langsung mengarah ke landing page
+7. Selanjutnya klik sign_up jika sudah memiliki akun, sebaliknya klik sign_in jika sudah memiliki akun
+8. Tampilan website akan mengarah ke home dan website sudah bisa digunakan untuk melakukan order, melihat history, mengupdate profil dan menghapus akun
